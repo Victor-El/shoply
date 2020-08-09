@@ -7,13 +7,19 @@ nav {
 }
 
 .brand-logo {
-    display: flex;
+    display: flex !important;
     align-items: center;
+    justify-content: space-around;
 }
 
 .brand-logo > img {
     height: inherit;
     width: 40px;
+    margin: 0 15px;
+}
+
+.brand-logo > span {
+    color: gold;
 }
 
 .search-box {
