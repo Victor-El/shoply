@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoply</title>
+    <link rel="icon" href="{% static 'images/shoply.png' %}">
+    <link rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    {% include 'partials/nav.html' %}
+    <main>
+        {% block shoply-content %}
+            
+        {% endblock shoply-content %}
+    </main>
+    <footer>&copy; Shoply 2020</footer>
+    <script src="{% static 'jquery/jquery.js' %}"></script>
+    <script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+</body>
+</html>
