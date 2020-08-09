@@ -3,19 +3,16 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <a href="#!" class="brand-logo"><img style="margin: 10px;" height="40" width="90" src="{% static 'images/shoply.png' %}" alt="shoply"></a>
-      <form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
+      <a href="#!" class="brand-logo"><img src="{% static 'images/shoply.png' %}" alt="shoply"><span>Shoply</span></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="collapsible.html"><i color="goldenrod" class="material-icons">account_circle</i></a></li>
         <li><a href="mobile.html"><i class="material-icons">shopping_cart</i></a></li>
       </ul>
     </div>
+    <div class="search-box">
+      <input type="text" id="search">
+      <i class="material-icons">search</i>
+    </div> 
   </nav>
   <ul class="sidenav" id="mobile-demo">
     <form>

@@ -5,3 +5,34 @@ nav {
 .material-icons {
     color: goldenrod;
 }
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo > img {
+    height: inherit;
+    width: 40px;
+}
+
+.search-box {
+    margin: 10px auto;
+    width: 70vw;
+    border-radius: 15px;
+    background-color: #FFFEEE;
+    border: 2px solid goldenrod;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-box > input {
+    color: black;
+    font-size: 1.3em;
+    border: none;
+}
+
+.search-box > input:focus {
+    border: none;
+}
