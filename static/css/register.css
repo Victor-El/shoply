@@ -1,16 +1,16 @@
-#login-form {
+#reg-form {
     margin: 0 auto;
     width: 70%;
     border-color: goldenrod;
 }
 
-#login-form input[type="email"]:focus, #login-form input[type="password"]:focus {
+#reg-form input[type="email"]:focus, #reg-form input[type="password"]:focus {
     /* border-color: inherit; */
     border-bottom: 1px solid goldenrod;
     box-shadow: 0 1px 0 0 goldenrod;
 }
 
-#login-title {
+#reg-title {
     color: goldenrod;
     margin: 20px auto;
     font-size: 1.3em;

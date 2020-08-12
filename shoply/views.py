@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
 
 
 def home(request, *args, **kwargs):
@@ -15,3 +15,14 @@ def login(request, *args, **kwargs):
         "form": form
     }
     return render(request, "login.html", context)
+
+
+def register(request, *args, **kwargs):
+
+    form = RegisterForm(request.POST or None)
+
+    context = {
+        "form": form
+    }
+
+    return render(request, 'register.html', context)
