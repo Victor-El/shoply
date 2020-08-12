@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block shoply-content %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <p id="login-title">Login</p>
+    <form id="login-form" method="POST"> {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Login">
+    </form>
+{% endblock shoply-content %}

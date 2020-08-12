@@ -1,0 +1,31 @@
+#login-form {
+    margin: 0 auto;
+    width: 70%;
+    border-color: goldenrod;
+}
+
+#login-form input[type="email"]:focus, #login-form input[type="password"]:focus {
+    /* border-color: inherit; */
+    border-bottom: 1px solid goldenrod;
+    box-shadow: 0 1px 0 0 goldenrod;
+}
+
+#login-title {
+    color: goldenrod;
+    margin: 20px auto;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+input[type='submit'] {
+    width: 70%;
+    background-color: goldenrod;
+    color: black;
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 1.1em;
+    max-width: 300px;
+    cursor: pointer;
+    border: none;
+}
