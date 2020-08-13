@@ -21,8 +21,13 @@ def register(request, *args, **kwargs):
 
     form = RegisterForm(request.POST or None)
 
+    if request.method == 'POST':
+        if form.is_valid():
+            return form.register()
+
     context = {
         "form": form
     }
+
 
     return render(request, 'register.html', context)

@@ -6,7 +6,11 @@
     <p id="reg-title">Register</p>
     <form id="reg-form" method="POST"> {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Sign Up">
+        <label>
+            <input type="checkbox" name="agree">
+            <span>Agree with our terms and conditions and privacy policy</span>
+        </label>
+        <input id="sign-up" type="submit" value="Sign Up" disabled>
     </form>
     <p id="account">Have an account? <a href="/login">Login</a></p>
 {% endblock shoply-content %}
