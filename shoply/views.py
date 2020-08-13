@@ -7,6 +7,11 @@ def home(request, *args, **kwargs):
     return render(request, "index.html", {})
 
 
+
+def privacy_policy(request, *args, **kwargs):
+    return render(request, 'privacy_policy.html', {})
+
+
 def login(request, *args, **kwargs):
 
     form = LoginForm(request.POST or None)
