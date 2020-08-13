@@ -4,12 +4,6 @@
     border-color: goldenrod;
 }
 
-#login-form input[type="email"]:focus, #login-form input[type="password"]:focus {
-    /* border-color: inherit; */
-    border-bottom: 1px solid goldenrod;
-    box-shadow: 0 1px 0 0 goldenrod;
-}
-
 #login-title {
     color: goldenrod;
     margin: 20px auto;

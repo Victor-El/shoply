@@ -60,6 +60,11 @@ nav {
             transform-origin: 100% 100%;
   }
 
+  input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="number"]:focus {
+    border-bottom: 1px solid goldenrod !important;
+    box-shadow: 0 1px 0 0 goldenrod !important;
+}
+
 /* .content {
     margin: 100px 0;
     padding: 0 20px;
