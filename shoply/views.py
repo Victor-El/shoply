@@ -12,6 +12,10 @@ def privacy_policy(request, *args, **kwargs):
     return render(request, 'privacy_policy.html', {})
 
 
+def terms_and_conditions(request, *args, **kwargs):
+    return render(request, 'terms_and_conditions.html', {})
+
+
 def login(request, *args, **kwargs):
 
     form = LoginForm(request.POST or None)
